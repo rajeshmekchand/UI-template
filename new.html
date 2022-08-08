@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="a"></p>
+    <script>
+        function car(x,y,z,k){
+            this.mfg_year=x;
+            this.no_of_tyres=y
+            this.no_of_gear= z
+            this.type_of_engine= k
+            this.cumlative=function(){
+                return this.type_of_engine+ '<br>'+this.special_feature
+            }
+        }
+        car.prototype.special_feature='gps'
+        var obj= new car(2021,4,3,"petrol")
+        document.getElementById('a').innerHTML=obj.cumlative();
+    </script>
+</body>
+</html>

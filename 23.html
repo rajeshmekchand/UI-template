@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        document.write("Printing of object as a value<br><br>")
+        var k={'student1':{'name':'rajesh','branch':'cs'},'student2':{'name':'mekchand','branch':'ec'}}
+        for(i in k.student1)
+        document.write(i+":"+k.student1[i]+"<br><br>")
+        for( i in k.student2)
+        document.write(i+":"+k.student2[i]+"<br><br>")
+        var p={'student1':[{'name':'rajesh','branch':'cs'},{'name':'mekchand','branch':'ec'}]}
+        document.write("Printing of an array as a value<br><br>")
+        for(i in p.student1){
+            document.write(p.student1[i].name+"<br><br>")
+            document.write(p.student1[i].branch+"<br><br>")
+        }
+    </script>
+</body>
+</html>

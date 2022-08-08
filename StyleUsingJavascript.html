@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #a{
+            width: 10cm; height: 10cm; background-color: aqua;
+        }
+        button{
+            position: relative; left: 3cm; top: 0;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="f1()">click here</button>
+    <div id="a"></div>
+    <script>
+     function f1(){
+        var k=document.getElementById('a').style 
+        k.marginLeft ="4cm"
+        k.marginTop="4cm"
+        k.backgroundImage="radial-gradient(pink,tomato,black,orange)"
+        k.borderWidth="20px"
+        k.bordorstyle="double"
+        k.borderColor="white"
+        k.borderRadius="0.25cm 10cm "
+        k.transition="transform 15s "
+        k.transform="rotate(360deg) "
+     }
+    </script>
+</body>
+</html>
