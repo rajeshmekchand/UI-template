@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../KishanCare.Com/bs_jq_react/jquery.color.plus-names-2.1.0.js"></script>
+    <script src="../KishanCare.Com/bs_jq_react/jquery-3.6.0.js"></script>
+    <style>
+        #b{
+            width: 100px; height: 100px; background-color: greenyellow;
+        }
+    </style>
+</head>
+<body>
+    <button id="a">Animation with delay and callback</button>
+    <div id="b">hello Indore</div>
+    <script>
+        $(document).ready(function(){
+            $('#a').click(function(){
+            $('#b').animate({width:'+=200px',height:'+=300px'},20000,function(){'ho gaya ji'})   
+            })
+        });
+    </script>
+</body>
+</html>

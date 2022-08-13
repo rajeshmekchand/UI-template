@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="a">rajesh</div>
+    <button onclick="f1()">Click here</button>
+    <script>
+    function f1(){
+        var j= document.getElementById("a").style
+        j.width='4cm'
+        j.height='4cm'
+        j.border='2px double green '
+        j.position='relative';
+        j.left='5cm'
+         j.right='1cm'
+         document.getElementById('b').animate({transform:'rotate(360deg)',backgroundColor:'red',backgroundImage:'radial-Gradient(pink,tomato,green,yellow,white ,black,)',borderRadius:'3cm 1cm'},{iterations:Infinity,duration:2000})
+
+    }
+    </script>
+</body>
+</html>

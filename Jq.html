@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../KishanCare.Com/bs_jq_react/jquery-3.6.0.js"></script>
+    <script src="../KishanCare.Com/bs_jq_react/jquery.color.plus-names-2.1.0.js"></script>
+<style>
+    #b{
+        width: 100px; height: 100px; background-color: aqua;
+    }
+</style>
+</head>
+<body>
+    <button id="a">animation quue delay</button>
+    <div id="b" style="background-color: green; height: 100px; width:100px; position: absolute; ">Hello Indore</div>
+  <script>
+    $(document).ready(function(){
+        $('#a').click(function(){
+            $('#b').animate({height:'300px'},5000)
+            $('#b').animate({width:'400px'},5000)
+            $('#b').animate({height:'100px'},5000)
+            $('#b').animate({width:'100px'},5000)
+            $('#b').animate({borderRadius:'30%',padding:'100px'},10000)
+        })
+    });
+  </script>
+</body>
+</html>

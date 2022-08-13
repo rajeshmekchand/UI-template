@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../KishanCare.Com/bs_jq_react/jquery-3.6.0.js"></script>
+    <script src="../KishanCare.Com/bs_jq_react/jquery.color.plus-names-2.1.0.js "></script>
+     <style>
+        #a{ border-width: 2px; border-color: yellow; border-style: dotted; width: 5cm;    }
+     </style>
+</head>
+<body>
+    <p id="a">para</p>
+    <button id="b"> Click here</button>
+    <script>
+        $(document).ready(function(){
+        $('#b').click(function(){
+            $('#a').animate({color:'red',marginLeft:'200px',width:'300px',height:'200px',backgroundColor:'green',borderRadius:'50%',borderWidth:'20px'})
+        })
+        })
+    </script>
+</body>
+</html>

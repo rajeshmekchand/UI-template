@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="h">Enter a Number</label>
+    <input type="text" id="h"><br>
+    <button onclick="f1()">Table Output</button>
+    <p id="table">Table</p>
+    <script>
+        function f1(){
+            var input = document.getElementById('h').value
+            var num=1;
+            var text =' '
+            while (num <=10){
+                text =text+''+(num*input).toFixed(2)+'&emsp;';
+                num++;
+            }
+            var k=document.getElementById('table')
+            k.innerHTML=text
+            k.style.color='blue'
+
+        }
+    </script>
+</body>
+</html>
